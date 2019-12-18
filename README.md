@@ -9,7 +9,9 @@ WpfExToolkit
 
 A fork of https://wpftoolkit.codeplex.com/ and now (https://github.com/xceedsoftware/wpftoolkit)
 
-But this fork is maintained and Pull Requests and Patches are accepted.
+Only for fixing bugs.
+
+This fork is not maintained.
 
 Another feature wich is not yet in the Xceed Version is NetCore 3 support!
 

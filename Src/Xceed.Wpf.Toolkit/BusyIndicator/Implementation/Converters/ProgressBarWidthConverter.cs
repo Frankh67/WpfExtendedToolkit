@@ -27,10 +27,22 @@ namespace Xceed.Wpf.Toolkit.Converters
   {
     public object Convert( object[] values, Type targetType, object parameter, CultureInfo culture )
     { 
-      var contentWidth = ( double )values[ 0 ];
-      var parentMinWidth = ( double )values[ 1 ];
+      try
+      {
+        var contentWidth = (double)values[0];
+        var parentMinWidth = (double)values[1];
 
-      return Math.Max( contentWidth, parentMinWidth );
+        return Math.Max(contentWidth, parentMinWidth);
+      }
+      catch (InvalidCastException)
+      {
+        // Solve a bug that may occur during a remote desktop connection.
+        // In this error case the values array contains objects
+        // of type  MS.Internal.NamedObject that are not convertable.
+
+        // Return in this case the default value for unset values
+        return DependencyProperty.UnsetValue;
+      }
     }
 
     public object[] ConvertBack( object value, Type[] targetTypes, object parameter, CultureInfo culture )

@@ -12,12 +12,13 @@
     <PackageLicenseExpression>MS-PL</PackageLicenseExpression>
     <Authors>DotNetProjects, F. Hablizel</Authors>
     <PackageId>Frankh67.Extended.Wpf.Toolkit</PackageId>
-    <Version>1.0.0</Version>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
     <RootNamespace>Xceed.Wpf.Toolkit</RootNamespace>
     <Description>This assembly implements various Windows Presentation Framework controls. Also a fix for remote destop connection is included.</Description>
     <Copyright></Copyright>
+    <AssemblyName>Xceed.Wpf.Extended.Toolkit</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.ComponentModel.DataAnnotations" />

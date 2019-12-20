@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFrameworks>netcoreapp3.0;net4</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1;net45</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>sn.snk</AssemblyOriginatorKeyFile>
@@ -12,18 +12,20 @@
     <PackageLicenseExpression>MS-PL</PackageLicenseExpression>
     <Authors>DotNetProjects, F. Hablizel</Authors>
     <PackageId>Frankh67.Extended.Wpf.Toolkit</PackageId>
-    <Version>1.0.2</Version>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
+    <Version>1.0.3</Version>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <FileVersion>1.0.3.0</FileVersion>
     <RootNamespace>Xceed.Wpf.Toolkit</RootNamespace>
     <Description>This assembly implements various Windows Presentation Framework controls. Also a fix for remote destop connection is included.</Description>
     <Copyright></Copyright>
     <AssemblyName>Xceed.Wpf.Toolkit</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Resource Include="**\*.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="**\*.png" />
+    <PackageReference Include="System.ComponentModel.Annotations">
+      <Version>4.7.0</Version>
+    </PackageReference>
   </ItemGroup>
 </Project>
